@@ -1,12 +1,46 @@
-<!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Wu tang man</title>
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
+        crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+    <title>Hangman</title>
 </head>
+
 <body>
-    
+    <header>
+        <div class="jumbotron">
+            Wu-HangMan
+        </div>
+    </header>
+
+    <div class="container ">
+        <div class="row-md-12">
+            <div class="col-m-5 card">
+                <img src="./assets/images/wu.jpg" alt="The Wu">
+                <p id='character-description'></p>
+            </div>
+            <div class="col-m-5 card">
+
+                <p id="directions">Press Any Key to Start</p>
+                Letters Guessed
+                <p id="wrong-guesses"></p>
+                <p id="underscores">_ _ _ _ _ _ _ </p>
+                Guesses Remaining
+                <p id="guesses-remaining"></p>
+                Wins
+                <p id="win-counter"></p>
+                Losses
+                <p id="loss-counter"></p>
+            </div>
+        </div>
+    </div>
+    <footer>Copyright Wutang forever</footer>
 </body>
+<script src="assets/javascipt/word.js"></script>
+
 </html>
